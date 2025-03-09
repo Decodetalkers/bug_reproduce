@@ -1,0 +1,13 @@
+[package]
+name = "bug_reproduce"
+version = "0.1.0"
+edition = "2024"
+
+[workspace]
+members = [".", "./testlib", "anotherbin"]
+
+[workspace.dependencies]
+testlib = { path = "./testlib", version = "0.1" }
+
+[dependencies]
+testlib = { workspace = true }
