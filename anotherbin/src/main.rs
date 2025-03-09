@@ -1,3 +1,3 @@
 fn main() {
-    println!("Hello, world!");
+    testlib2::bug_reproduce();
 }

@@ -5,14 +5,25 @@ version = 4
 [[package]]
 name = "anotherbin"
 version = "0.1.0"
+dependencies = [
+ "testlib2",
+]
 
 [[package]]
 name = "bug_reproduce"
 version = "0.1.0"
 dependencies = [
  "testlib",
+ "testlib2",
 ]
 
 [[package]]
 name = "testlib"
 version = "0.1.0"
+
+[[package]]
+name = "testlib2"
+version = "0.1.0"
+dependencies = [
+ "testlib",
+]

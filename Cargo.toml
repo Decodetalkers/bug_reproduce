@@ -4,10 +4,12 @@ version = "0.1.0"
 edition = "2024"
 
 [workspace]
-members = [".", "./testlib", "anotherbin"]
+members = [".", "./testlib", "anotherbin", "testlib2"]
 
 [workspace.dependencies]
 testlib = { path = "./testlib", version = "0.1" }
+testlib2 = { path = "./testlib2", version = "0.1" }
 
 [dependencies]
-testlib = { workspace = true }
+testlib.workspace = true
+testlib2.workspace = true
